@@ -1,0 +1,739 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="hexo," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/a.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="摘要   
+
+
+本文介绍了我两三天以来搭建属于自己个人的博客的心路历程以及部分步骤，仅供记录与参考。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo博客搭建两三事">
+<meta property="og:url" content="http://yzhao94.coding.me/2016/11/04/Hexo博客搭建两三事/index.html">
+<meta property="og:site_name" content="秋日的思雨">
+<meta property="og:description" content="摘要   
+
+
+本文介绍了我两三天以来搭建属于自己个人的博客的心路历程以及部分步骤，仅供记录与参考。">
+<meta property="og:image" content="http://yzhao94.coding.me/images/Hexo博客搭建两三事/1.jpg">
+<meta property="og:updated_time" content="2016-11-11T07:24:13.218Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo博客搭建两三事">
+<meta name="twitter:description" content="摘要   
+
+
+本文介绍了我两三天以来搭建属于自己个人的博客的心路历程以及部分步骤，仅供记录与参考。">
+<meta name="twitter:image" content="http://yzhao94.coding.me/images/Hexo博客搭建两三事/1.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> Hexo博客搭建两三事 | 秋日的思雨 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">秋日的思雨</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Hexo博客搭建两三事
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-04T20:30:19+08:00" content="2016-11-04">
+              2016-11-04
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/study/" itemprop="url" rel="index">
+                    <span itemprop="name">study</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <div align="center"><br><img src="/images/Hexo博客搭建两三事/1.jpg" alt="“head”"><br></div>
+
+<font size="5"><strong>摘要</strong></font>   
+
+<hr>
+<p>本文介绍了我两三天以来搭建属于自己个人的博客的心路历程以及部分步骤，仅供记录与参考。</p>
+<a id="more"></a>
+<hr>
+<blockquote>
+<ol>
+<li>Hexo的搭建与部分配置</li>
+<li>NexT主题的自定义配置</li>
+<li>github与gitcafe的部署</li>
+<li>markdown部分语法</li>
+<li>其他闲谈</li>
+</ol>
+</blockquote>
+<hr>
+<h3 id="Hexo的搭建与部分配置"><a href="#Hexo的搭建与部分配置" class="headerlink" title="Hexo的搭建与部分配置"></a>Hexo的搭建与部分配置</h3><p>在Hexo的搭建部分，我参考了众多的资料，其实基本步骤很简单，因为框架已经写的很完善，建立过程很顺利，首先下载<a href="http://http://nodejs.cn/" target="_blank" rel="external">node</a>（框架基于node），<a href="https://git-scm.com/downloads" target="_blank" rel="external">git</a>（用于部署），接着使用npm输入以下代码即可：  </p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure>
+<p>接着在博客创建的文件下，右击点击 git bush here (git安装成功后可见，通过cmd也可)，运行：  </p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo init  </div><div class="line">npm install</div></pre></td></tr></table></figure>
+<p>即可创建博客，打开文件夹，_config.yml文件即为配置文件，配置的话。。。。。都是些关于站点基本的东西，较为关键的一个是部署，一个是主题，主题我的是<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">next</a>,下载后放到theme文件下即可。部署的配置，放在第三部分介绍。值得注意的是，source是存放站点东西的文件，博客会存放在_post中，其他琐碎的在这里不做介绍了。</p>
+<h3 id="NexT主题的自定义配置"><a href="#NexT主题的自定义配置" class="headerlink" title="NexT主题的自定义配置"></a>NexT主题的自定义配置</h3><p><a href="http://theme-next.iissnan.com/" target="_blank" rel="external">next</a>是中国人写的，所以文档中文部分很好理解。除了比较常用的添加标签、分类页面、代码高亮、侧边栏社交、打赏、友情链接（设置为了block格式，在主题配置文件中配置），我觉得添加了一个比较有意思的版权说明部分，添加了比较有趣的东西。 具体实现参考了<a href="http://www.tuicool.com/articles/m6bIJfq" target="_blank" rel="external">为Hexo博客添加版权说明和打赏功能</a>。实现过程如下：  </p>
+<ol>
+<li>在博客根目录下（和 source 同级），新建一个名为 scripts 的文件夹。</li>
+<li>在 scripts 文件夹内, 新建一个 AddTail.js 脚本文件，脚本具体内容详见下文。</li>
+<li>在博客根目录下，新建一个 tail.md 文件，里面写想要展示的版本说明内容。示例如下文所示。  </li>
+</ol>
+<p>AddTail.js 脚本文件：</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Filename: AddTail.js</span></div><div class="line"><span class="comment">// Author: Colin</span></div><div class="line"><span class="comment">// Date: 2016/11/04</span></div><div class="line"><span class="comment">// Based on the script by KUANG Qi: http://kuangqi.me/tricks/append-a-copyright-info-after-every-post/</span></div><div class="line"></div><div class="line"><span class="comment">// Add a tail to every post from tail.md</span></div><div class="line"><span class="comment">// Great for adding copyright info</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</div><div class="line"></div><div class="line">hexo.extend.filter.register(<span class="string">'before_post_render'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</div><div class="line">	<span class="keyword">if</span>(data.copyright == <span class="literal">false</span>) <span class="keyword">return</span> data;</div><div class="line">	</div><div class="line">	<span class="comment">// Add seperate line</span></div><div class="line">	data.content += <span class="string">'\n___\n'</span>;</div><div class="line">	</div><div class="line">	<span class="comment">// Try to read tail.md</span></div><div class="line">	<span class="keyword">try</span> &#123;</div><div class="line">		<span class="keyword">var</span> file_content = fs.readFileSync(<span class="string">'tail.md'</span>);</div><div class="line">		<span class="keyword">if</span>(file_content &amp;&amp; data.content.length &gt; <span class="number">50</span>) </div><div class="line">		&#123;</div><div class="line">			data.content += file_content;</div><div class="line">		&#125;</div><div class="line">	&#125; <span class="keyword">catch</span> (err) &#123;</div><div class="line">		<span class="keyword">if</span> (err.code !== <span class="string">'ENOENT'</span>) <span class="keyword">throw</span> err;</div><div class="line">		</div><div class="line">		<span class="comment">// No process for ENOENT error</span></div><div class="line">	&#125;</div><div class="line"></div><div class="line">  	<span class="comment">// 添加具体文章链接, 不需要去掉即可</span></div><div class="line">	<span class="keyword">var</span> permalink = <span class="string">'\n本文链接：'</span> + data.permalink;</div><div class="line">	data.content += permalink;</div><div class="line">  </div><div class="line">	<span class="keyword">return</span> data;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>在tail.md文件中，则直接输入想写的内容即可。</p>
+<h3 id="github与coding的部署"><a href="#github与coding的部署" class="headerlink" title="github与coding的部署"></a>github与coding的部署</h3><p>部署的话，首先在<a href="https://github.com/" target="_blank" rel="external">github</a>和<a href="https://coding.net" target="_blank" rel="external">coding</a>（原来的gitcafe，被coding收购）官网注册。。具体过程。。。参考<a href="http://www.cnblogs.com/liulangmao/p/4323064.html" target="_blank" rel="external">使用hexo搭建github.io博客(一)</a>。总之，部署的代码部分很简单：  </p>
+<pre><code>hexo clean //删除source与data，最好每次部署都运行，否则标签、分类数会出错
+hexo generate //可以用hexo g代替
+hexo deploy //可以用hexo d代替
+</code></pre><p>然后，因为我刚开始是部署在github上的，但是，由于莫名的原因，显示不完整，内容无法显示，查阅资料说原因是墙。。索性在github作为备份，在coding作为主要托管的地方。在部署的方面，与官网上的对应就好。。。因为是同时部署在两个地方，贴一点代码作为参考：  </p>
+<pre><code>deploy: 
+  type: git
+  repo: 
+        github: git@github.com:yzhao94/yzhao94.github.io.git,master
+        gitcafe: git@git.coding.net:yzhao94/yzhao94.git,master
+</code></pre><p>在根目录配置里输入即可。<br>总之一句话，配置很简单。。部署各种问题。。。。（不知道是不是我的问题），总之参考上面的文章解决，还无法解决，只能左转度娘了。。。</p>
+<h3 id="markdown部分语法"><a href="#markdown部分语法" class="headerlink" title="markdown部分语法"></a>markdown部分语法</h3><p>因为文章是markdown格式，所以了解一点md的语法还是很关键的。它的<a href="http://www.appinn.com/markdown/" target="_blank" rel="external">中文语法说明</a>,了解具体的可以点击查看。本文只写一些我暂时会感觉会用到的，将来会加以补充:)<br>在此之前，推荐一款md编辑器：MarkdownPad 2。它可以实时显示你的文章，很方便，上面的快捷键也免去了不少需要了解的markdown语法，简化了操作。具体下载地址，我不是官网下载的。。。所以请自行度娘。<br>回归正题，那么除了编辑器提供的快捷键，还有那些需要注意的呢？  </p>
+<h4 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h4><p>因为md回车是不换行的，查阅资料后，得知，它的换行方式是“空格*2+回车”。  </p>
+<h4 id="图片的引入"><a href="#图片的引入" class="headerlink" title="图片的引入"></a>图片的引入</h4><p>本着每篇开头放一张自己比较心水的图片，作为占空间不大的一个文章组成部分，我决定暂时放在本地，即根目录/source/images/文章题目的文件夹里。引用的时候：  </p>
+<pre><code>![“描述”](/images/文章名字/图片名字.jpg)
+</code></pre><p>按上述格式即可，插一句，<strong>宽为800px</strong>可以占满全屏，如果需要将图片居中，可以加入以下css：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">align</span>=<span class="string">center</span>&gt;</span></div><div class="line">	![“图片替代文字”](/images/文章名字/图片名字.jpg)</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>图片格式的问题，需要自己调节大小，可以再本地调节，满意以后再部署。  </p>
+<h4 id="设置字体大小"><a href="#设置字体大小" class="headerlink" title="设置字体大小"></a>设置字体大小</h4> <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">size</span>=<span class="string">5</span>&gt;</span>xx<span class="tag">&lt;/<span class="name">font</span>&gt;</span></div></pre></td></tr></table></figure>
+<h4 id="代码高亮"><a href="#代码高亮" class="headerlink" title="代码高亮"></a>代码高亮</h4><p>博客本地发布的时候，发现代码不高亮。。。除了设置，代码段还需要有一定的规则：需要在三个点后面加语言名称，这样才可以使代码高亮。</p>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">//一些常用命令</div><div class="line"></div><div class="line">hexo new&quot;postName&quot; #新建文章</div><div class="line"></div><div class="line">hexo new page&quot;pageName&quot; #新建页面</div><div class="line"></div><div class="line">hexo generate #生成静态页面至public目录</div><div class="line"></div><div class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</div><div class="line"></div><div class="line">hexo deploy #将.deploy目录部署到GitHub</div><div class="line"></div><div class="line">hexo help # 查看帮助</div><div class="line"></div><div class="line">hexo version #查看Hexo的版本</div></pre></td></tr></table></figure>
+<p>写这个以前，回顾了上面所写的，很多都是一笔带过，部署部分的复杂的地方，也是引用的别人的博客。。。因为这方面确实存在不足，写这个博客更多还是想有一个可以写自己的东西的地方。遗漏的部分。。多参考下别人的成果吧:)<br>当然，博客更多是用来写东西的，更多花里胡哨的东西其实是没有太大的意义的。不过对于我的博客，还是有一些小的细节，希望在更多了解了这个引擎、js代码以及node以后，加以改进，让它外表变得更加符合我的想法吧。<br>如果这篇文章有幸帮助到了你，我不胜荣幸。</p>
+<hr>
+<p>我是一条可爱的小尾巴~~~~<br>本文链接：<a href="http://yzhao94.coding.me/2016/11/04/Hexo博客搭建两三事/">http://yzhao94.coding.me/2016/11/04/Hexo博客搭建两三事/</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.jpg" alt="yzhao94 Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag">#hexo</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/01/我的第一篇博客/" rel="next" title="我的第一篇博客">
+                <i class="fa fa-chevron-left"></i> 我的第一篇博客
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/11/05/研究生的日常（一）/" rel="prev" title="研究生的日常（一）">
+                研究生的日常（一） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="yzhao94" />
+          <p class="site-author-name" itemprop="name">yzhao94</p>
+          <p class="site-description motion-element" itemprop="description">已过经年，少年路渐远</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/yzhao94" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/yizhao94" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-block">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              友情链接
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://hexo.io/zh-cn/" title="Hexo" target="_blank">Hexo</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://theme-next.iissnan.com/" title="NexT" target="_blank">NexT</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo的搭建与部分配置"><span class="nav-number">1.</span> <span class="nav-text">Hexo的搭建与部分配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NexT主题的自定义配置"><span class="nav-number">2.</span> <span class="nav-text">NexT主题的自定义配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#github与coding的部署"><span class="nav-number">3.</span> <span class="nav-text">github与coding的部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#markdown部分语法"><span class="nav-number">4.</span> <span class="nav-text">markdown部分语法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#换行"><span class="nav-number">4.1.</span> <span class="nav-text">换行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#图片的引入"><span class="nav-number">4.2.</span> <span class="nav-text">图片的引入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置字体大小"><span class="nav-number">4.3.</span> <span class="nav-text">设置字体大小</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码高亮"><span class="nav-number">4.4.</span> <span class="nav-text">代码高亮</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他"><span class="nav-number">5.</span> <span class="nav-text">其他</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">yzhao94</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>
